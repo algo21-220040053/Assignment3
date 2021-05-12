@@ -31,7 +31,7 @@ using China Securities A share index as the benchmark index.
 
 ## Model fitting 
 Using OLS to fit the Fama French Model, we get servel result like the following :
-<div align=center>
+
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:                  wanke   R-squared:                       0.466
@@ -56,4 +56,4 @@ Prob(Omnibus):                  0.000   Jarque-Bera (JB):              232.976
 Skew:                           0.671   Prob(JB):                     2.57e-51
 Kurtosis:                       5.301   Cond. No.                         133.
 ==============================================================================
-<div align=left>
+
