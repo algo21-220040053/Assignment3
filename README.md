@@ -18,5 +18,42 @@ For the calculation of SMB and HML, this part needs to first divide the stocks i
 
 <div align=center><img width="377" alt="formula2" src="https://user-images.githubusercontent.com/78734848/117967183-584e8680-b357-11eb-9935-52e5e27ea49b.png"><div align=left>
 
+
 ## Picking stocks and the benchmark index 
-We 
+We picked China Vanke(wanke), Ping An Insurance Company(pingan), Kweichow Moutai Company(maotai), Wanhua Chemical Group Company(wanhua) and iFLYTEK(keda) as our research stocks,
+using China Securities A share index as the benchmark index.
+
+### Time series graph of cumulative return
+<div align=center><img width="640" alt="累计收益率时序图" src="https://user-images.githubusercontent.com/78734848/117968966-61405780-b359-11eb-9af9-9896e1c54900.png"><div align=left>
+
+### Correlation coefficient graph
+<div align=center><img width="640" alt="相关系数" src="https://user-images.githubusercontent.com/78734848/117969120-9a78c780-b359-11eb-83a5-9dda2e05b5f9.png"><div align=left>
+
+## Model fitting 
+Using OLS to fit the Fama French Model, we get servel result like the following :
+<div align=center>
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  wanke   R-squared:                       0.466
+Model:                            OLS   Adj. R-squared:                  0.464
+Method:                 Least Squares   F-statistic:                     228.1
+Date:                Wed, 12 May 2021   Prob (F-statistic):          2.25e-106
+Time:                        15:51:55   Log-Likelihood:                 2137.5
+No. Observations:                 788   AIC:                            -4267.
+Df Residuals:                     784   BIC:                            -4248.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.0019      0.001      3.137      0.002       0.001       0.003
+x1             1.1044      0.045     24.781      0.000       1.017       1.192
+x2            -0.7876      0.067    -11.682      0.000      -0.920      -0.655
+x3             0.8861      0.073     12.204      0.000       0.744       1.029
+==============================================================================
+Omnibus:                       96.843   Durbin-Watson:                   1.829
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              232.976
+Skew:                           0.671   Prob(JB):                     2.57e-51
+Kurtosis:                       5.301   Cond. No.                         133.
+==============================================================================
+<div align=left>
