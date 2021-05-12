@@ -32,28 +32,23 @@ using China Securities A share index as the benchmark index.
 ## Model fitting 
 Using OLS to fit the Fama French Model, we get servel result like the following :
 
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:                  wanke   R-squared:                       0.466
-Model:                            OLS   Adj. R-squared:                  0.464
-Method:                 Least Squares   F-statistic:                     228.1
-Date:                Wed, 12 May 2021   Prob (F-statistic):          2.25e-106
-Time:                        15:51:55   Log-Likelihood:                 2137.5
-No. Observations:                 788   AIC:                            -4267.
-Df Residuals:                     784   BIC:                            -4248.
-Df Model:                           3                                         
-Covariance Type:            nonrobust                                         
-==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const          0.0019      0.001      3.137      0.002       0.001       0.003
-x1             1.1044      0.045     24.781      0.000       1.017       1.192
-x2            -0.7876      0.067    -11.682      0.000      -0.920      -0.655
-x3             0.8861      0.073     12.204      0.000       0.744       1.029
-==============================================================================
-Omnibus:                       96.843   Durbin-Watson:                   1.829
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              232.976
-Skew:                           0.671   Prob(JB):                     2.57e-51
-Kurtosis:                       5.301   Cond. No.                         133.
-==============================================================================
+Wanke  
+<div align=center><img width="550" alt="formula2" src="https://user-images.githubusercontent.com/78734848/117970583-669ea180-b35b-11eb-8fd3-8dd276266b2c.png"><div align=left>
+
+Finally, we got the index as following:
+
+<div align=center><img width="460" alt="系数" src="https://user-images.githubusercontent.com/78734848/117970903-d1e87380-b35b-11eb-9d06-1302862fed69.png"><div align=left>
+  
+Attribution analysis of individual stock income :
+<div align=center><img width="840" alt="系数" src="https://user-images.githubusercontent.com/78734848/117971240-3572a100-b35c-11eb-8efc-6b8484d9cfb9.png"><div align=left>
+
+
+
+  
+
+
+
+  
+
+
 
